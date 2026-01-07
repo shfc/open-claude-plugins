@@ -1,0 +1,17 @@
+{
+  "name": "open-claude-plugins",
+  "owner": {
+    "name": "shfc",
+    "url": "https://github.com/shfc"
+  },
+  "metadata": {
+    "description": "A curated collection of plugins that extend Claude Code with new commands, skills, hooks, and capabilities"
+  },
+  "plugins": [
+    {
+      "name": "reflect",
+      "description": "Enables Claude Code to learn from your sessions and continuously improve its skills based on your corrections and preferences",
+      "source": "./plugins/reflect"
+    }
+  ]
+}
