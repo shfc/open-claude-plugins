@@ -1,0 +1,34 @@
+name: Check Plugin Versions
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'plugins/**'
+  push:
+    branches:
+      - main
+    paths:
+      - 'plugins/**'
+
+jobs:
+  check-versions:
+    runs-on: ubuntu-latest
+    name: Validate Plugin Version Changes
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for all branches
+
+      - name: Fetch base branch
+        run: |
+          git fetch origin main:main
+
+      - name: Make version check script executable
+        run: chmod +x .github/scripts/check-plugin-versions.sh
+
+      - name: Run version check
+        run: .github/scripts/check-plugin-versions.sh main
