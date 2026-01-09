@@ -1,6 +1,6 @@
 ---
-description: Analyze session and propose skill improvements based on learnings
-argument-hint: [skill] | on | off | status
+description: "Analyze session and propose skill improvements based on learnings"
+argument-hint: "[skill] | on | off | status"
 ---
 
 # /reflect Command
