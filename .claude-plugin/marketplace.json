@@ -12,6 +12,11 @@
       "name": "reflect",
       "description": "Enables Claude Code to learn from your sessions and continuously improve its skills based on your corrections and preferences",
       "source": "./plugins/reflect"
+    },
+    {
+      "name": "postmortem",
+      "description": "AI-powered postmortem analysis that learns from historical fix commits to prevent code regression",
+      "source": "./plugins/postmortem"
     }
   ]
 }

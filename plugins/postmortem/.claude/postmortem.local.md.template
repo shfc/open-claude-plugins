@@ -1,0 +1,58 @@
+---
+# Postmortem Plugin Configuration
+# Copy this file to your project's .claude/postmortem.local.md and customize
+
+# Storage directory for postmortem documents (relative to project root)
+storage_dir: ".claude/postmortem"
+
+# Commit filtering settings
+commit_filter:
+  # Commit types to exclude (only used when include_keywords is not set)
+  # Common conventional commit types
+  exclude_types:
+    - "feat"
+    - "docs"
+    - "chore"
+    - "style"
+    - "refactor"
+    - "test"
+    - "build"
+    - "ci"
+    - "perf"
+
+  # Keywords to include in commit messages
+  # If set, ONLY commits containing these keywords will be analyzed
+  # If not set, all commits except exclude_types will be analyzed
+  # Uncomment to enable:
+  # include_keywords:
+  #   - "fix"
+  #   - "bug"
+  #   - "hotfix"
+  #   - "patch"
+  #   - "resolve"
+  #   - "issue"
+
+# Postmortem generation settings
+postmortem:
+  # Minimum severity to generate postmortem (low, medium, high, critical)
+  min_severity: "low"
+
+  # Automatically generate tags from commit content
+  auto_tag: true
+
+  # Include full diff in postmortem document
+  include_diff: false
+
+  # Batch size for processing commits during init/update
+  batch_size: 20
+
+# Severity level definitions (for reference)
+# - critical: System crash, data loss, security breach
+# - high: Core functionality broken, widespread impact
+# - medium: Feature broken, workaround available
+# - low: Minor issue, edge case, cosmetic problem
+---
+
+Postmortem plugin configuration template.
+
+Copy this file to your project's `.claude/postmortem.local.md` to customize settings for your project.
