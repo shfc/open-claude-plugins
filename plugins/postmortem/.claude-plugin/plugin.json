@@ -1,0 +1,15 @@
+{
+  "name": "postmortem",
+  "version": "0.2.0",
+  "description": "AI-powered postmortem analysis for preventing code regression by learning from historical fix commits",
+  "author": {
+    "name": "shfc"
+  },
+  "keywords": [
+    "postmortem",
+    "code-quality",
+    "regression-prevention",
+    "commit-analysis",
+    "ai-learning"
+  ]
+}
