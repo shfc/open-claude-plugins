@@ -12,13 +12,13 @@ Enables Claude Code to learn from your sessions and continuously improve its ski
 ## Installation
 
 ```bash
-# Add marketplace
-claude plugin add-marketplace shfc/open-claude-plugins
+# Add marketplace (or use '/plugin marketplace add shfc/open-claude-plugins' inside Claude Code)
+claude plugin marketplace add shfc/open-claude-plugins
 
-# Install plugin
+# Install plugin (or use '/plugin install reflect@open-claude-plugins' inside Claude Code)
 claude plugin install reflect@open-claude-plugins
 
-# Restart Claude Code
+# Restart Claude Code (only required if using slash commands above)
 ```
 
 ## Usage

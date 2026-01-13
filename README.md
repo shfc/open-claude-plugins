@@ -10,12 +10,12 @@ A curated collection of plugins that extend Claude Code with new commands, skill
 ## Installation
 
 ```bash
-# Add marketplace
-claude plugin add-marketplace shfc/open-claude-plugins
+# Add marketplace (or use '/plugin marketplace add shfc/open-claude-plugins' inside Claude Code)
+claude plugin marketplace add shfc/open-claude-plugins
 
-# Install plugins
+# Install plugins (or use '/plugin install' inside Claude Code)
 claude plugin install reflect@open-claude-plugins
 claude plugin install postmortem@open-claude-plugins
 
-# Restart Claude Code
+# Restart Claude Code (only required if using slash commands above)
 ```

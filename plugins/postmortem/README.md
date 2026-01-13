@@ -54,15 +54,17 @@ As codebases grow, AI-assisted coding (Vibe Coding) can become fragile - fixing 
 
 1. Add the open-claude-plugins marketplace:
    ```bash
-   claude plugin add-marketplace shfc/open-claude-plugins
+   # Or use '/plugin marketplace add shfc/open-claude-plugins' inside Claude Code
+   claude plugin marketplace add shfc/open-claude-plugins
    ```
 
 2. Install the postmortem plugin:
    ```bash
+   # Or use '/plugin install postmortem@open-claude-plugins' inside Claude Code
    claude plugin install postmortem@open-claude-plugins
    ```
 
-3. Restart Claude Code to load the plugin
+3. Restart Claude Code (only required if using slash commands above)
 
 4. (Optional) Create project configuration:
    ```bash
