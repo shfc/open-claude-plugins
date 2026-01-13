@@ -11,42 +11,15 @@ Enables Claude Code to learn from your sessions and continuously improve its ski
 
 ## Installation
 
-### Option 1: Fork and Customize (Recommended)
+```bash
+# Add marketplace
+claude plugin add-marketplace shfc/open-claude-plugins
 
-This approach gives you full control to modify the plugin for your needs.
+# Install plugin
+claude plugin install reflect@open-claude-plugins
 
-1. **Fork this repository on GitHub**, then clone your fork:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/open-claude-plugins.git
-   cd open-claude-plugins
-   ```
-
-2. **Customize the plugin** (optional):
-   - Edit `plugins/reflect/skills/reflect/SKILL.md` to adjust the reflection logic
-
-3. **Register your fork as a marketplace in Claude Code:**
-   ```bash
-   /plugin marketplace add YOUR_USERNAME/open-claude-plugins
-   ```
-
-4. **Install the reflect plugin:**
-   ```bash
-   /plugin install reflect@open-claude-plugins
-   ```
-
-### Option 2: Install Directly from This Repository
-
-If you want to use the plugin as-is without customization:
-
-1. **Register this repository as a marketplace:**
-   ```bash
-   /plugin marketplace add shfc/open-claude-plugins
-   ```
-
-2. **Install the reflect plugin:**
-   ```bash
-   /plugin install reflect@open-claude-plugins
-   ```
+# Restart Claude Code
+```
 
 ## Usage
 
